@@ -27,16 +27,16 @@ do so use **CassandraStatusSample** event types.
 
 The following attributes are reported always
 * Status: 
-     0 (not reported) if there is an error executing `nodetool info` or `nodetool status` commands
-     1 if the commands execute succesfully and return a status of "Down"
-     2 if the commands execute successfully and return a status of "Up"
+     1. 0 (not reported) if there is an error executing `nodetool info` or `nodetool status` commands
+     2. 1 if the commands execute succesfully and return a status of "Down"
+     3. 2 if the commands execute successfully and return a status of "Up"
 
 * State :
-     0 (not reported) if there is an error executing `nodetool info` or `nodetool status` commands
-     1 if the commands execute successfully and return a state of `N`
-     2 if the commands execute successfully and return a state of `L`
-     3 if the commands execute successfully and return a state of `J`
-     4 if the commands execute successfully and return a state of `M`
+     1. 0 (not reported) if there is an error executing `nodetool info` or `nodetool status` commands
+     2. 1 if the commands execute successfully and return a state of `N`
+     3. 2 if the commands execute successfully and return a state of `L`
+     4. 3 if the commands execute successfully and return a state of `J`
+     5. 4 if the commands execute successfully and return a state of `M`
 
 If the command execute succesfully, then the following attributes are also parsed, They will not be reported however if the commands fails for any reason,
 
