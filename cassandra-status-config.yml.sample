@@ -1,0 +1,10 @@
+integration_name: com.newrelic.cassandra-status
+
+instances:
+  - name: <INSTANCE IDENTIFIER>
+    command: metrics
+    arguments:
+      cmd: nodetool
+    labels:
+      key1: <LABEL_VALUE>
+
